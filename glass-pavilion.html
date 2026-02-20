@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glass Pavilion | Design Studio</title>
+    <meta name="description" content="View details for The Glass Pavilion architecture project.">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar" style="background: var(--nav-bg);">
+        <div class="logo">DESIGN STUDIO<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="hover-underline">← Back to Works</a></li>
+            <li><a href="index.html#inquiry" class="hover-underline">Inquire</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="project-detail-page">
+        <!-- Hero Section -->
+        <section class="project-hero">
+            <div class="project-hero-content reveal-up">
+                <span class="badge">Cultural</span>
+                <h1 class="font-serif display-title">The Glass Pavilion</h1>
+
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value">Oslo, Norway</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Year</span>
+                        <span class="meta-value">2023</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Size</span>
+                        <span class="meta-value">12,000 sq ft</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Client</span>
+                        <span class="meta-value">City of Oslo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-hero-image reveal-up delay-1">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80"
+                    alt="The Glass Pavilion">
+            </div>
+        </section>
+
+        <!-- Project Description -->
+        <section class="project-description">
+            <div class="desc-col concept reveal-up">
+                <h2>The Concept</h2>
+            </div>
+            <div class="desc-col text reveal-up delay-1">
+                <p class="lead">The Glass Pavilion is a striking cultural center that acts as a transparent beacon,
+                    welcoming the public into a space of art and interaction.</p>
+                <p>Designed to be as unobtrusive as possible, the structural framework is minimized, creating an
+                    illusion of a floating roof above a continuous pane of glass. This ensures that the beautiful
+                    surrounding landscape and the exhibits inside are visually merged.</p>
+                <p>Advanced environmental controls were integrated seamlessly, ensuring that despite the expansive
+                    glazing, the building remains highly energy-efficient throughout the harsh Scandinavian winters and
+                    bright summers.</p>
+            </div>
+        </section>
+
+        <!-- Video Walkthrough -->
+        <section class="project-full-media reveal-up">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-building-in-the-city-4318-large.mp4"
+                    type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Extensive Project Gallery Grid -->
+        <section class="project-gallery">
+            <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- Added more images as requested -->
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                    alt="Detail Shot 1" class="reveal-up hover-zoom">
+                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
+                    alt="Detail Shot 2" class="reveal-up delay-1 hover-zoom">
+                <img src="https://images.unsplash.com/photo-1541881451967-df4fa74c40b8?auto=format&fit=crop&w=800&q=80"
+                    alt="Detail Shot 3" class="reveal-up delay-2 hover-zoom">
+                <img src="https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&w=800&q=80"
+                    alt="Detail Shot 4" class="reveal-up hover-zoom">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                    alt="Detail Shot 5" class="reveal-up delay-1 hover-zoom">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80"
+                    alt="Detail Shot 6" class="reveal-up delay-2 hover-zoom">
+            </div>
+        </section>
+
+        <!-- Next Project Navigation -->
+        <section class="next-project">
+            <a href="project-detail.html" class="next-link">
+                <span class="next-label">Next Project</span>
+                <h3 class="font-serif">Oasis Headquarters <span class="arrow">→</span></h3>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom" style="border-top: none;">
+            <p>&copy; 2026 Design Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

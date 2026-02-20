@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Studio | Portfolio</title>
+    <meta name="description" content="Architecture & Design Studio Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- EmailJS SDK for sending emails directly from front-end -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Note: For a live production site, you'd replace this with your actual EmailJS Public Key
+            emailjs.init("YOUR_PUBLIC_KEY_HERE");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="logo">DESIGN STUDIO<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about" class="hover-underline">Studio</a></li>
+            <li><a href="#projects" class="hover-underline">Selected Works</a></li>
+            <li><a href="#media" class="hover-underline">Visuals</a></li>
+            <li><a href="#inquiry" class="hover-underline">Inquire</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-content">
+                <span class="badge fade-in-up">Architecture & Urbanism</span>
+                <h1 class="reveal-text delay-1">Shaping<br><em>spaces</em> for<br>tomorrow.</h1>
+                <p class="fade-in delay-2">We are a contemporary architecture practice dedicated to minimalist design,
+                    sustainable materials, and profound spatial experiences.</p>
+
+                <div class="metrics fade-in delay-3">
+                    <div class="metric">
+                        <span class="counter" data-target="42">0</span>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="metric">
+                        <span class="counter" data-target="15">0</span>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="metric">
+                        <span class="counter" data-target="8">0</span>
+                        <p>Active Sites</p>
+                    </div>
+                </div>
+
+                <a href="#projects" class="scroll-down fade-in delay-4">Explore <span class="arrow">↓</span></a>
+            </div>
+            <div class="hero-media fade-in delay-2">
+                <video autoplay loop muted playsinline
+                    poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80">
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-architect-working-on-building-mock-up-4958-large.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Dynamic Projects Masonry Grid -->
+        <section class="projects" id="projects">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                </div>
+            </div>
+
+            <!-- EXPANDED Project Grid to showcase MORE works -->
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal-up mix residential">
+                    <div class="img-wrapper hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
+                            alt="Villa Nova">
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>View Project</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Villa Nova</h3>
+                        <span>Residential — 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 (Video) -->
+                <article class="project-card reveal-up delay-1 mix cultural" data-link="glass-pavilion.html">
+                    <div class="img-wrapper hover-zoom">
+                        <video autoplay loop muted playsinline>
+                            <source
+                                src="https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-building-in-the-city-4318-large.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>Watch Reel</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>The Glass Pavilion</h3>
+                        <span>Cultural — 2023</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal-up mix commercial">
+                    <div class="img-wrapper hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+                            alt="Oasis Headquarters">
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>View Project</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Oasis Headquarters</h3>
+                        <span>Commercial — 2023</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal-up delay-1 mix residential">
+                    <div class="img-wrapper hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80"
+                            alt="Minimalist Retreat">
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>View Project</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Minimalist Retreat</h3>
+                        <span>Residential — 2022</span>
+                    </div>
+                </article>
+
+                <!-- NEW: Project 5 -->
+                <article class="project-card reveal-up mix cultural">
+                    <div class="img-wrapper hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                            alt="City Library Extension">
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>View Project</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>City Library Extension</h3>
+                        <span>Cultural — 2022</span>
+                    </div>
+                </article>
+
+                <!-- NEW: Project 6 -->
+                <article class="project-card reveal-up delay-1 mix residential">
+                    <div class="img-wrapper hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                            alt="Cliffside House">
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>View Project</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cliffside House</h3>
+                        <span>Residential — 2021</span>
+                    </div>
+                </article>
+
+                <!-- Project 7 (Wide) -->
+                <article class="project-card reveal-up mix commercial" style="grid-column: span 2;">
+                    <div class="img-wrapper hover-zoom aspect-wide">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
+                            alt="Axiom Tower">
+                        <div class="overlay"><a href="project-detail.html"
+                                style="text-decoration:none; color:inherit;"><span>View Project</span></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Axiom Tower</h3>
+                        <span>Commercial — 2021</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Infinite Scrolling Image Gallery & Reel -->
+        <section class="gallery-marquee" id="media">
+            <h2 class="sr-only">Visuals</h2>
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=400&q=80"
+                        alt="Mansion Exterior">
+                    <video autoplay loop muted playsinline style="height: 400px; width: 300px; object-fit: cover;">
+                        <source
+                            src="https://assets.mixkit.co/videos/preview/mixkit-curved-modern-architecture-building-with-glass-facade-4314-large.mp4"
+                            type="video/mp4">
+                    </video>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80"
+                        alt="Modern Home Interior">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=400&q=80"
+                        alt="Villa Pool">
+                    <video autoplay loop muted playsinline style="height: 400px; width: 300px; object-fit: cover;">
+                        <source
+                            src="https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-building-in-the-city-4318-large.mp4"
+                            type="video/mp4">
+                    </video>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80"
+                        alt="Minimalist Interior">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=400&q=80"
+                        alt="Modern Kitchen">
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="marquee-content" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=400&q=80"
+                        alt="Mansion Exterior">
+                    <video autoplay loop muted playsinline style="height: 400px; width: 300px; object-fit: cover;">
+                        <source
+                            src="https://assets.mixkit.co/videos/preview/mixkit-curved-modern-architecture-building-with-glass-facade-4314-large.mp4"
+                            type="video/mp4">
+                    </video>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80"
+                        alt="Modern Home Interior">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=400&q=80"
+                        alt="Villa Pool">
+                    <video autoplay loop muted playsinline style="height: 400px; width: 300px; object-fit: cover;">
+                        <source
+                            src="https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-building-in-the-city-4318-large.mp4"
+                            type="video/mp4">
+                    </video>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80"
+                        alt="Minimalist Interior">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=400&q=80"
+                        alt="Modern Kitchen">
+                </div>
+            </div>
+        </section>
+
+        <!-- Studio Introduction Section -->
+        <section class="studio" id="about">
+            <div class="studio-content reveal-up">
+                <span class="badge"
+                    style="background:transparent; border: 1px solid var(--text-color); color:var(--text-color); margin-bottom: 2rem;">WHO
+                    WE ARE</span>
+                <p class="intro-text">Founded in 2010, Design Studio operates at the intersection of architecture,
+                    urbanism, and design. Through rigorous analysis and execution, we strive to produce work that is
+                    both functional and poetic.</p>
+                <div class="status-banner">
+                    <div class="dot pulse"></div>
+                    <span>Currently taking on select projects for Q3 2026.</span>
+                </div>
+            </div>
+            <div class="studio-image reveal-up delay-1">
+                <div class="parallax-wrapper">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80"
+                        alt="Architecture Studio Office" class="parallax-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Client Inquiry & Questionnaire Section -->
+        <section class="inquiry-section" id="inquiry">
+            <div class="inquiry-container reveal-up">
+                <div class="inquiry-header">
+                    <h2 class="section-title">Start a Conversation</h2>
+                    <p>Have a project in mind? We'd love to hear from you. Fill out the brief questionnaire below, and
+                        our team will get back to you to discuss your vision.</p>
+                </div>
+
+                <form id="inquiry-form" class="questionnaire-form">
+                    <div class="form-group">
+                        <label for="client_name">Name / Organization</label>
+                        <input type="text" id="client_name" name="client_name" required
+                            placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client_email">Email Address</label>
+                        <input type="email" id="client_email" name="client_email" required placeholder="you@domain.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Type</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="project_type" value="Residential" checked> Residential
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="project_type" value="Commercial"> Commercial
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="project_type" value="Cultural"> Cultural / Public
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="project_type" value="Other"> Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project_location">Project Location</label>
+                        <input type="text" id="project_location" name="project_location"
+                            placeholder="City, State, or Region">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project_details">Tell us about your project</label>
+                        <textarea id="project_details" name="project_details" rows="5" required
+                            placeholder="Describe your vision, scope, estimated timeline, and any specific requirements..."></textarea>
+                    </div>
+
+                    <div class="form-group budget-slider">
+                        <label for="project_budget">Estimated Budget (INR)</label>
+                        <div class="range-wrap">
+                            <input type="range" class="range" id="project_budget" name="project_budget" min="100000"
+                                max="50000000" step="500000" value="15000000">
+                            <output class="bubble">₹15,000,000</output>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit hover-zoom">
+                        <span>Send Inquiry</span>
+                        <div class="btn-loader hidden"></div>
+                    </button>
+
+                    <div id="form-message" class="hidden"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col reveal-up">
+                <div class="logo">DESIGN STUDIO<span class="dot">.</span></div>
+            </div>
+            <div class="footer-col reveal-up delay-1">
+                <h4>Inquiries</h4>
+                <a href="mailto:hello@designstudio.com" class="hover-text">hello@designstudio.com</a>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="footer-col reveal-up delay-2">
+                <h4>Location</h4>
+                <p>124 Design Avenue<br>Bangalore, India 560001</p>
+            </div>
+            <div class="footer-col reveal-up delay-3">
+                <h4>Social</h4>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#" class="hover-text">Instagram</a>
+                    <a href="#" class="hover-text">LinkedIn</a>
+                    <a href="#" class="hover-text">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Design Studio. All rights reserved. Built dynamically.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
