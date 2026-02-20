@@ -521,16 +521,15 @@ h1 em {
 
 .marquee-content {
     display: flex;
-    gap: 0.5rem;
-    /* a small refined space */
-    padding-right: 0.5rem;
-    /* matching padding for seamless loop */
+    gap: 15px;
+    padding-right: 15px;
 }
 
 .marquee-content img {
     height: 400px;
     width: 300px;
     object-fit: cover;
+    border-radius: 6px;
 }
 
 @keyframes scroll {
