@@ -528,7 +528,7 @@ h1 em {
 
 .marquee-content img,
 .marquee-content video {
-    height: 350px;
+    height: 500px;
     width: 350px;
     object-fit: cover;
     border-radius: 0;
