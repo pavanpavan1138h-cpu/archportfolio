@@ -504,6 +504,7 @@ h1 em {
 
 /* Gallery Marquee */
 .gallery-marquee {
+    padding: 6rem 0;
     overflow: hidden;
     line-height: 0;
     /* Removes whitespace below inline media */
@@ -525,11 +526,12 @@ h1 em {
     padding-right: 15px;
 }
 
-.marquee-content img {
-    height: 400px;
-    width: 300px;
+.marquee-content img,
+.marquee-content video {
+    height: 350px;
+    width: 350px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 0;
 }
 
 @keyframes scroll {
